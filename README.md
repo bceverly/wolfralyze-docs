@@ -56,4 +56,4 @@ Wolfralyze is an independent project and is not affiliated with, endorsed by, or
 
 Copyright © 2025 Bryan C. Everly. All Rights Reserved.
 
-The Wolfralyze plugin is licensed under GPL-3.0. See the [main repository](https://github.com/bceverly/wolfralyze) for details.
+The Wolfralyze plugin is licensed under AGPL-3.0. See the [main repository](https://github.com/bceverly/wolfralyze) for details.
