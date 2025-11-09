@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wolfralyze - Professional Code Quality Analysis for Wolfram Mathematica. 529+ rules for security, bugs, and code smells. Tier 1 SonarQube plugin.">
+    <meta name="keywords" content="Wolfram Mathematica, SonarQube, code quality, static analysis, security, code smells">
+    <title>Wolfralyze - Professional Code Quality Analysis for Wolfram Mathematica™</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Wolfralyze</a>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#getting-started">Get Started</a></li>
+                <li><a href="https://github.com/bceverly/sonar-mathematica-plugin/wiki">Documentation</a></li>
+                <li><a href="https://github.com/bceverly/sonar-mathematica-plugin">Source Code</a></li>
+                <li><a href="https://sonarcloud.io/summary/new_code?id=bceverly_sonar-mathematica-plugin">Project Status</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Wolfralyze</h1>
+            <p class="tagline">Professional Code Quality Analysis for Wolfram Mathematica™</p>
+            <p>The industry's <strong>FIRST and ONLY Tier 1</strong> <a href="https://www.sonarsource.com/products/sonarqube/" style="color: white; text-decoration: underline;">SonarQube®</a> plugin for <a href="https://www.wolfram.com/mathematica/" style="color: white; text-decoration: underline;">Wolfram Mathematica™</a></p>
+
+            <div class="badges">
+                <a href="https://sonarcloud.io/summary/new_code?id=bceverly_sonar-mathematica-plugin" class="badge">
+                    <img src="https://sonarcloud.io/api/project_badges/measure?project=bceverly_sonar-mathematica-plugin&metric=alert_status" alt="Quality Gate Status">
+                </a>
+                <a href="https://sonarcloud.io/summary/new_code?id=bceverly_sonar-mathematica-plugin" class="badge">
+                    <img src="https://sonarcloud.io/api/project_badges/measure?project=bceverly_sonar-mathematica-plugin&metric=coverage" alt="Coverage">
+                </a>
+                <a href="https://sonarcloud.io/summary/new_code?id=bceverly_sonar-mathematica-plugin" class="badge">
+                    <img src="https://sonarcloud.io/api/project_badges/measure?project=bceverly_sonar-mathematica-plugin&metric=bugs" alt="Bugs">
+                </a>
+                <a href="https://sonarcloud.io/summary/new_code?id=bceverly_sonar-mathematica-plugin" class="badge">
+                    <img src="https://sonarcloud.io/api/project_badges/measure?project=bceverly_sonar-mathematica-plugin&metric=vulnerabilities" alt="Vulnerabilities">
+                </a>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="#getting-started" class="btn btn-primary">Get Started Now</a>
+                <a href="https://github.com/bceverly/sonar-mathematica-plugin/wiki" class="btn btn-secondary">View Documentation</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">529+</div>
+                    <div class="stat-label">Analysis Rules</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">56</div>
+                    <div class="stat-label">Security Rules</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">162</div>
+                    <div class="stat-label">Bug Detectors</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">53</div>
+                    <div class="stat-label">Quick Fixes</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">9/10</div>
+                    <div class="stat-label">OWASP Top 10 Coverage</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Why Wolfralyze?</h2>
+            <p style="text-align: center; font-size: 1.2rem; max-width: 800px; margin: 0 auto 3rem auto;">
+                Wolfralyze brings <strong>enterprise-grade code quality analysis</strong> to <a href="https://www.wolfram.com/mathematica/">Wolfram Mathematica™</a>,
+                matching the depth and sophistication of analysis available for Java, Python, and other mainstream languages.
+            </p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🛡️ Comprehensive Security Analysis</h3>
+                    <ul>
+                        <li><strong>OWASP Top 10 2021</strong>: 9 of 10 categories covered</li>
+                        <li><strong>Taint Analysis</strong>: Track untrusted data from sources to sinks</li>
+                        <li><strong>SQL Injection Detection</strong>: Pattern and data-flow based</li>
+                        <li><strong>Command Injection</strong>: Shell command safety validation</li>
+                        <li><strong>XSS Prevention</strong>: String sanitization checks</li>
+                        <li><strong>Cryptography</strong>: Weak algorithms & hardcoded secrets detection</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🔍 Deep Code Analysis</h3>
+                    <ul>
+                        <li><strong>Symbol Table</strong>: Cross-file function/variable tracking</li>
+                        <li><strong>Type Inference</strong>: Understand variable types through patterns</li>
+                        <li><strong>Data Flow Analysis</strong>: Track values through program execution</li>
+                        <li><strong>Control Flow Analysis</strong>: Detect unreachable code & infinite loops</li>
+                        <li><strong>Null Safety</strong>: Track $Failed, Missing[], undefined values</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>⚡ Performance Optimization</h3>
+                    <ul>
+                        <li><strong>Pattern Complexity</strong>: Detect backtracking patterns</li>
+                        <li><strong>List Operations</strong>: Avoid O(n²) anti-patterns</li>
+                        <li><strong>Compilation Opportunities</strong>: Suggest Compile[] usage</li>
+                        <li><strong>Packed Arrays</strong>: Detect unpacking operations</li>
+                        <li><strong>Memory Leaks</strong>: Find growing definition chains</li>
+                        <li><strong>1000× Speedups</strong>: Detect AppendTo in loops</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🔧 Mathematica-Specific Analysis</h3>
+                    <ul>
+                        <li><strong>Pattern System</strong>: Validate pattern correctness</li>
+                        <li><strong>Attribute System</strong>: Proper use of HoldFirst, Listable, etc.</li>
+                        <li><strong>Scoping</strong>: Module, Block, With usage validation</li>
+                        <li><strong>Notebooks</strong>: Notebook-specific best practices</li>
+                        <li><strong>Paclets</strong>: Package development standards</li>
+                        <li><strong>WolframCloud</strong>: Cloud deployment checks</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>📊 Test Coverage Integration</h3>
+                    <ul>
+                        <li><strong>Native Support</strong>: Built-in coverage tracking</li>
+                        <li><strong>Line-by-Line</strong>: Detailed hit counts</li>
+                        <li><strong>Automatic Import</strong>: JSON export from tests</li>
+                        <li><strong>SonarQube UI</strong>: Visual coverage display</li>
+                        <li><strong>Quality Gates</strong>: Enforce coverage minimums</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🚀 Developer Productivity</h3>
+                    <ul>
+                        <li><strong>53 Quick Fixes</strong>: One-click automated corrections</li>
+                        <li><strong>IDE Integration</strong>: Real-time feedback via SonarLint</li>
+                        <li><strong>CI/CD Ready</strong>: Works with GitHub Actions, GitLab, Jenkins</li>
+                        <li><strong>Custom Rules</strong>: Define project-specific patterns</li>
+                        <li><strong>Complexity Metrics</strong>: Cyclomatic & cognitive complexity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tier-1" style="background-color: white;">
+        <div class="container">
+            <h2>Tier 1 Language Support</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">
+                Wolfralyze provides <strong>best-in-class support</strong> for <a href="https://www.wolfram.com/mathematica/">Wolfram Mathematica™</a>,
+                comparable to <a href="https://www.sonarsource.com/products/sonarqube/">SonarQube®</a> support for major programming languages:
+            </p>
+
+            <table style="width: 100%; max-width: 800px; margin: 0 auto; border-collapse: collapse; background-color: white;">
+                <thead>
+                    <tr style="background-color: var(--primary-color); color: white;">
+                        <th style="padding: 1rem; text-align: left;">Feature</th>
+                        <th style="padding: 1rem; text-align: center;">Java</th>
+                        <th style="padding: 1rem; text-align: center;">Python</th>
+                        <th style="padding: 1rem; text-align: center; background-color: var(--secondary-color);">Mathematica™</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 0.75rem; border-bottom: 1px solid var(--border-color);">Rules</td>
+                        <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border-color);">733</td>
+                        <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border-color);">410</td>
+                        <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border-color); font-weight: bold;">529</td>
+                    </tr>
+                    <tr style="background-color: var(--bg-color);">
+                        <td style="padding: 0.75rem; border-bottom: 1px solid var(--border-color);">AST Parser</td>
+                        <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border-color);">✅</td>
+                        <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border-color);">✅</td>
+                        <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border-color);">✅</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border-bottom: 1px solid var(--border-color);">Symbol Table</td>
+                        <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border-color);">✅</td>
+                        <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border-color);">✅</td>
+                        <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border-color);">✅</td>
+                    </tr>
+                    <tr style="background-color: var(--bg-color);">
+                        <td style="padding: 0.75rem; border-bottom: 1px solid var(--border-color);">Type System</td>
+                        <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border-color);">✅</td>
+                        <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border-color);">✅</td>
+                        <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border-color);">✅</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border-bottom: 1px solid var(--border-color);">Data Flow</td>
+                        <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border-color);">✅</td>
+                        <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border-color);">✅</td>
+                        <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border-color);">✅</td>
+                    </tr>
+                    <tr style="background-color: var(--bg-color);">
+                        <td style="padding: 0.75rem; border-bottom: 1px solid var(--border-color);">Taint Analysis</td>
+                        <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border-color);">✅</td>
+                        <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border-color);">✅</td>
+                        <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border-color);">✅</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border-bottom: 1px solid var(--border-color);">Test Coverage</td>
+                        <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border-color);">✅</td>
+                        <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border-color);">✅</td>
+                        <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border-color);">✅</td>
+                    </tr>
+                    <tr style="background-color: var(--bg-color);">
+                        <td style="padding: 0.75rem;">Quick Fixes</td>
+                        <td style="padding: 0.75rem; text-align: center;">✅</td>
+                        <td style="padding: 0.75rem; text-align: center;">✅</td>
+                        <td style="padding: 0.75rem; text-align: center;">✅</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="getting-started">
+        <div class="container">
+            <h2>Get Started in Minutes</h2>
+
+            <h3>1. Install the Plugin</h3>
+            <pre><code># Download the latest release
+curl -L -o sonar-mathematica-plugin.jar \
+  https://github.com/bceverly/sonar-mathematica-plugin/releases/latest/download/sonar-mathematica-plugin.jar
+
+# Copy to SonarQube plugins directory
+cp sonar-mathematica-plugin.jar $SONARQUBE_HOME/extensions/plugins/
+
+# Restart SonarQube
+$SONARQUBE_HOME/bin/[platform]/sonar.sh restart</code></pre>
+
+            <h3>2. Configure Your Project</h3>
+            <pre><code># Create sonar-project.properties in your project root
+cat > sonar-project.properties << EOF
+sonar.projectKey=my-mathematica-project
+sonar.projectName=My Mathematica Project
+sonar.sources=.
+sonar.inclusions=**/*.m,**/*.wl,**/*.wls
+EOF</code></pre>
+
+            <h3>3. Run Analysis</h3>
+            <pre><code>sonar-scanner</code></pre>
+
+            <h3>4. View Results</h3>
+            <p>Open your browser to <strong>http://localhost:9000</strong> and see:</p>
+            <ul>
+                <li>🔴 Security vulnerabilities to fix immediately</li>
+                <li>🐛 Bugs that could cause runtime errors</li>
+                <li>💡 Code smells to improve maintainability</li>
+                <li>📊 Test coverage metrics</li>
+                <li>📈 Complexity analysis per function</li>
+                <li>🔄 Duplicate code detection</li>
+            </ul>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="https://github.com/bceverly/sonar-mathematica-plugin/wiki/Installation" class="btn btn-primary">Full Installation Guide</a>
+                <a href="https://github.com/bceverly/mathematica-sonarqube-test-project" class="btn btn-secondary">Example Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: white;">
+        <div class="container">
+            <h2>Resources</h2>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>📚 Documentation</h3>
+                    <ul>
+                        <li><a href="https://github.com/bceverly/sonar-mathematica-plugin/wiki">Complete Wiki</a></li>
+                        <li><a href="https://github.com/bceverly/sonar-mathematica-plugin/wiki/Rule-Catalog">Rule Catalog</a></li>
+                        <li><a href="https://github.com/bceverly/sonar-mathematica-plugin/wiki/Security-Vulnerabilities">Security Rules</a></li>
+                        <li><a href="https://github.com/bceverly/sonar-mathematica-plugin/wiki/Test-Coverage">Test Coverage Guide</a></li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>💻 Source & Examples</h3>
+                    <ul>
+                        <li><a href="https://github.com/bceverly/sonar-mathematica-plugin">GitHub Repository</a></li>
+                        <li><a href="https://github.com/bceverly/mathematica-sonarqube-test-project">Test Project Example</a></li>
+                        <li><a href="https://github.com/bceverly/sonar-mathematica-plugin/releases">Downloads</a></li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🔗 External Links</h3>
+                    <ul>
+                        <li><a href="https://www.wolfram.com/mathematica/">Wolfram Mathematica™</a></li>
+                        <li><a href="https://reference.wolfram.com/language/">Mathematica™ Documentation</a></li>
+                        <li><a href="https://www.sonarsource.com/products/sonarqube/">SonarQube®</a></li>
+                        <li><a href="https://www.sonarsource.com/products/sonarcloud/">SonarCloud®</a></li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>📊 Project Health</h3>
+                    <ul>
+                        <li><a href="https://sonarcloud.io/summary/new_code?id=bceverly_sonar-mathematica-plugin">SonarCloud® Analysis</a></li>
+                        <li><a href="https://github.com/bceverly/sonar-mathematica-plugin/issues">Issue Tracker</a></li>
+                        <li><a href="https://github.com/bceverly/sonar-mathematica-plugin/wiki/SBOM">Software Bill of Materials</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Wolfralyze</h4>
+                    <p>Professional code quality analysis for Wolfram Mathematica™</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="https://github.com/bceverly/sonar-mathematica-plugin/wiki">Documentation</a></li>
+                        <li><a href="https://github.com/bceverly/sonar-mathematica-plugin">Source Code</a></li>
+                        <li><a href="https://github.com/bceverly/sonar-mathematica-plugin/releases">Downloads</a></li>
+                        <li><a href="https://github.com/bceverly/sonar-mathematica-plugin/issues">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>External Resources</h4>
+                    <ul>
+                        <li><a href="https://www.wolfram.com/mathematica/">Wolfram Mathematica™</a></li>
+                        <li><a href="https://www.sonarsource.com/products/sonarqube/">SonarQube®</a></li>
+                        <li><a href="https://www.sonarsource.com/products/sonarcloud/">SonarCloud®</a></li>
+                        <li><a href="https://reference.wolfram.com/language/">Mathematica™ Docs</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="legal">
+                    <strong>Trademarks and Legal Notices:</strong><br>
+                    Wolfram®, Mathematica®, and Wolfram Language™ are registered trademarks and trademarks of Wolfram Research, Inc.<br>
+                    SonarQube® and SonarCloud® are registered trademarks of SonarSource SA.<br>
+                    All trademarks and registered trademarks are the property of their respective owners.<br>
+                    Wolfralyze is an independent project and is not affiliated with, endorsed by, or sponsored by Wolfram Research, Inc. or SonarSource SA.
+                </div>
+                <p style="margin-top: 2rem;">
+                    Copyright © 2025 Bryan C. Everly. All Rights Reserved.
+                </p>
+                <p>
+                    Licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" style="color: white;">GPL-3.0</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

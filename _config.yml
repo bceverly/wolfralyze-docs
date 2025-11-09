@@ -1,0 +1,22 @@
+# Wolfralyze - SonarQube Plugin for Wolfram Mathematica
+title: "Wolfralyze"
+description: "Professional Code Quality Analysis for Wolfram Mathematica™"
+baseurl: ""
+url: "https://wolfralyze.org"
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Site metadata
+author: "Bryan C. Everly"
+github_username: bceverly
+repository: bceverly/sonar-mathematica-plugin
