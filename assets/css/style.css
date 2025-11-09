@@ -54,7 +54,9 @@ nav .logo {
 nav .logo-img {
     height: 50px;
     width: auto;
+    max-width: 200px;
     display: block;
+    object-fit: contain;
 }
 
 nav ul {
@@ -316,6 +318,7 @@ footer {
 
     nav .logo-img {
         height: 40px;
+        max-width: 160px;
     }
 
     nav ul {
