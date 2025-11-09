@@ -38,9 +38,9 @@ open index.html
 
 ## Links
 
-- **Main Plugin Repository**: https://github.com/bceverly/sonar-mathematica-plugin
-- **Documentation**: https://github.com/bceverly/sonar-mathematica-plugin/wiki
-- **Project Status**: https://sonarcloud.io/summary/new_code?id=bceverly_sonar-mathematica-plugin
+- **Main Plugin Repository**: https://github.com/bceverly/wolfralyze
+- **Documentation**: https://github.com/bceverly/wolfralyze/wiki
+- **Project Status**: https://sonarcloud.io/summary/new_code?id=bceverly_wolfralyze
 
 ## Legal
 
@@ -56,4 +56,4 @@ Wolfralyze is an independent project and is not affiliated with, endorsed by, or
 
 Copyright © 2025 Bryan C. Everly. All Rights Reserved.
 
-The Wolfralyze plugin is licensed under GPL-3.0. See the [main repository](https://github.com/bceverly/sonar-mathematica-plugin) for details.
+The Wolfralyze plugin is licensed under GPL-3.0. See the [main repository](https://github.com/bceverly/wolfralyze) for details.
