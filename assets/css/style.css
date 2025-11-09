@@ -47,6 +47,14 @@ nav .logo {
     font-weight: bold;
     color: white;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+nav .logo-img {
+    height: 50px;
+    width: auto;
+    display: block;
 }
 
 nav ul {
@@ -304,6 +312,10 @@ footer {
     nav .container {
         flex-direction: column;
         gap: 1rem;
+    }
+
+    nav .logo-img {
+        height: 40px;
     }
 
     nav ul {
