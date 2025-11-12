@@ -4,7 +4,7 @@ This repository contains the GitHub Pages website for [Wolfralyze](https://wolfr
 
 ## About Wolfralyze
 
-Wolfralyze is a Tier 1 SonarQube® plugin that brings enterprise-grade code quality analysis to Wolfram Mathematica™. With 529+ analysis rules, it provides the same depth of analysis available for mainstream languages like Java and Python.
+Wolfralyze is a Tier 1 SonarQube® plugin that brings enterprise-grade code quality analysis to Wolfram Mathematica™. With 559 analysis rules, it provides the same depth of analysis available for mainstream languages like Java and Python.
 
 ## Website
 
